@@ -11,7 +11,7 @@ func main(){
 	fmt.Println(a,b)
 
 	fmt.Println(true||false)
-	
+
 	fmt.Println(true&&false)
 
 
