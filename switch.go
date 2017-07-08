@@ -3,30 +3,27 @@ package main
 import "fmt"
 import "time"
 
-func main(){
+func main() {
 
-	i:="Aditya"
-	
+	i := "Aditya"
 
 	s := time.Now().Hour()
 	fmt.Println(s)
 
-	whoAmI := func(i interface{}){
-		switch t:=i.(type){
+	whoAmI := func(i interface{}) {
+		switch t := i.(type) {
 
 		case bool:
 			fmt.Println("Boolean")
 		case int:
 			fmt.Println("Integer")
-        	default:
+		default:
 			fmt.Println(t)
 		}
 	}
 
 	whoAmI(true)
 	whoAmI(i)
-
-
 
 }
 
